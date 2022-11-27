@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 // Components
@@ -14,7 +13,7 @@ import Footer from './components/Footer/Footer'
 import data from './data'
 
 function App() {
-  const [questions, setQuestions] = useState(data);
+  const [questions, setQuestions] = useState(data)
 
   return (
     <div>
@@ -23,16 +22,14 @@ function App() {
       <Download />
       <Watch />
       <Kids />
-      <div style={{ textAlign: 'center', overflow: 'hidden', borderBottom: '8px solid #222' }}>
-        <h3 style={{ paddingTop: '3rem', background: '#000', fontSize: '3rem', color: '#fff', paddingBottom: '2rem' }}>Frequently Asked Questions</h3>
-      {questions.map((question) => {
-        return <Questions key={question.id} {...question} />
-      })}
-        <div style={{ background: '#000', color: '#fff', padding: '4rem 0' }}>
-          <p style={{ fontSize: '20px' }}>Ready to watch? Enter your email to create or restart your membership.</p>
-          <input style={{ padding: '1rem 2rem', width: '450px', height: '55px', border: 'none', outline: 'none' }} type="text" placeholder='Email Adress' />
-          <button style={{ padding: '1rem 2rem', width: '200px', height: '55px', fontSize: '1.5rem', border: 'none', outline: 'none', position: 'relative', top: '6px', backgroundColor: "#e50914", color: "#fff", marginTop: '1rem' }} type="submit">Get Started</button>
-        </div>
+      <div style={{ padding: "3rem", background: "#000", color: "#fff", textAlign: "center", borderBottom: "8px solid #222" }}>
+        <h3 style={{ fontSize: "3rem", marginBottom: "2rem" }}>Frequently Asked Questions</h3>
+        {questions.map((question) => {
+          return <Questions key={question.id} {...question} />
+        })}
+        <p style={{ margin: "2rem 0", fontSize: "1.2rem" }}>Ready to watch? Enter your email to create or restart your membership.</p>
+        <input style={{ width: "500px", padding: "1.5rem 1rem" }} type="email" placeholder="Email Address" />
+        <button style={{ width: "200px", padding: "1.2rem 1rem", color: '#fff', backgroundColor: "#e50914", fontSize: "1.5rem", border: "none", position: "relative", top: "4px" }} type="submit">Get Started</button>
       </div>
       <Footer />
     </div>

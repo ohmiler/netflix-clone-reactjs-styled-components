@@ -1,30 +1,27 @@
 import styled from 'styled-components'
 
 export const FooterCon = styled.footer`
-    padding: 3rem 25rem;
     background: #000;
-    color: #727373;
-
-    a {
-        color: #727373;
-    }
+    padding: 3rem 25rem;
+    color: #737373;
 `
 
 export const FooterList = styled.div`
-    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 1.5rem 0;
 
-    ul  {
+    ul {
         list-style: none;
-        font-size: .8rem;
 
         li {
-            margin-top: 1rem;
-    
+            margin: 1rem 0;
+
             a {
+                font-size: 0.9rem;
+                color: #737373;
                 text-decoration: none;
-    
+
                 &:hover {
                     text-decoration: underline;
                 }

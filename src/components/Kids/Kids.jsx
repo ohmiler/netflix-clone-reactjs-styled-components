@@ -1,19 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import KidsImg from '../../assets/kids.png'
+
+import kidsImg from '../../assets/kids.png'
 
 import { KidsCon } from './Styled'
 
 function Kids() {
   return (
     <KidsCon>
-        <div>
-            <img width="100%" src={KidsImg} alt="" />
+        <div style={{ width: '100%' }}>
+            <img width="100%" src={kidsImg} alt="" />
         </div>
-        <div style={{ width: '70%', display: 'flex', alignItems: 'center', marginLeft: '4rem' }}>
+        <div  style={{ width: '100%', display: 'flex', alignItems: 'center' }}>
             <div>
                 <h3 style={{ fontSize: '3rem' }}>Create profiles for kids.</h3>
-                <p style={{ fontSize: '1.8rem', marginTop: '1rem' }}>
+                <p style={{ fontSize: '1.5rem', marginTop: '1rem' }}>
                     Send kids on adventures with their favorite <br />
                     characters in a space made just for them— <br />
                     free with your membership.

@@ -7,13 +7,9 @@ function Watch() {
     <WatchCon>
         <div>
             <h3 style={{ fontSize: '3rem' }}>Watch everywhere.</h3>
-            <p style={{ fontSize: '1.8rem', marginTop: '1rem'}}>
-                Stream unlimited movies and TV shows on <br />
-                your phone, tablet, laptop, and TV.
-            </p>
+            <p style={{ fontSize: '1.5rem', marginTop: '1rem' }}>Stream unlimited movies and TV shows on <br /> your phone, tablet, laptop, and TV.</p>
         </div>
-        <div>
-        </div>
+        <div></div>
     </WatchCon>
   )
 }

@@ -33,8 +33,8 @@ function Footer() {
                 <li><a href="#">Legal Notices</a></li>
             </ul>
         </FooterList>
-        <a style={{ padding: '1rem 2rem', border: '1px solid #727373', display: 'inline-block', marginTop: '2rem', borderRadius: '3px', textDecoration: 'none' }} href="#">English</a>
-        <p style={{ fontSize: '.8rem', marginTop: '1rem' }}>Netflix Thailand</p>
+        <a href="#" style={{ padding: "1rem 2rem", border: "1px solid #737373", borderRadius: "5px", display: "inline-block", marginBottom: "1rem", color: "#737373", textDecoration: "none" }}>English</a>
+        <p>Netflix Thailand</p>
     </FooterCon>
   )
 }
